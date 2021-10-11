@@ -32,16 +32,6 @@ function creatNavItem(id, name){
     return itemHTML
 }
 
-const inViewport = function(elem){
-    const bounding = elem.getBoundingClientRect()
-    return(
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
-}
-
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -63,18 +53,6 @@ const buildNavBar = ()=>{
     navBar.appendChild(fragment)
 }
 
-// Add class 'active' to section when near top of viewport
-
-const activeClass = ()=>{
-    for (let i = 0; i < sectionList.length; i++){
-        if(inViewport(sectionList[i])){
-            sectionList[i].classList.add('your-active-class')
-        }else{
-            sectionList[i].classList.remove('your-active-class')
-        }
-    }
-}
-
 // Scroll to anchor ID using scrollTO event
 
 const scrollToElem = (event)=>{
@@ -89,11 +67,12 @@ const scrollToElem = (event)=>{
  * End Main Functions
  * Begin Events
  * 
-*/
+ */
 
 // Build menu 
 
 buildNavBar()
+const navList = document.querySelectorAll('#navbar__list a')
 
 // Scroll to section on link click
 
@@ -102,7 +81,23 @@ navBarList.addEventListener('click',(e)=>{
     scrollToElem(e)
 })
 
-// Set sections as active
+// Add class 'active' to section when near top of viewport
+// Set sections and navItem as active
+const activeClass = ()=>{
+    sectionList.forEach((section)=>{
+        const bounding = section.getBoundingClientRect()
+        let data = section.attributes[1].value
+        let newData = data.length -1
+        let id = data[newData]
+        if(bounding.top >=0 && bounding.bottom < window.innerHeight){
+            section.classList.add('your-active-class')
+            navList[id-1].classList.add('your-active-class')
+       }else{
+           section.classList.remove('your-active-class')
+           navList[id-1].classList.remove('your-active-class')
+        }
+        })
+}
 
 document.addEventListener('scroll',()=>{
     activeClass()
