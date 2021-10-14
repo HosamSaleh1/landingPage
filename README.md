@@ -1,7 +1,7 @@
-<h1>Landing Page<\h1>
+# Landing Page
 ================
 
-Landing page is an **UDACITY** project.
+Landing page is an **UDACITY** project.<br>
 It's in the Front End Development Nano degree.
 
 # Requirements
@@ -14,41 +14,43 @@ It's in the Front End Development Nano degree.
 ## Table of Contents
 --------------------
 
-* Navbar. **Generated** by JavaScript.
+* Navbar.<br>**Generated** by JavaScript.
 
-* Four sections. **Every** section display some paragrapha bout it's subject.
+* Four sections.<br>**Every** section display some paragrapha bout it's subject.
 
-<h3>Instructions</h3>
+#Instructions
 ----------------
 
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project.
-And we'll need to convert this project from a static project to an interactive one.
-This will require modifying the HTML and CSS files,
+The starter project has some HTML and CSS styling to display a static version of the Landing Page project.<br>
+And we'll need to convert this project from a static project to an interactive one.<br>
+This will require modifying the HTML and CSS files,<br>
 But primarily the JavaScript file.
 
 ## Folder Content
 -----------------
 
-* CSS
+* CSS/
     Styles.css
-* JS
+* JS/
     Script.js
 * Index.html
 * README.md
 
-# How to start
+## How to start
 ---------------
 
-To get started, open `js/app.js` and start building out the app's functionality
+To get started, open `js/app.js` and start building out the app's functionality For specific,<br>
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+detailed instructions, look at the project instructions in the Udacity Classroom.<br>
 
-And all the usabillty must built in javascript, event the scroll behavior need to set to smoth by js.
+And all the usabillty must built in javascript, event the scroll behavior need to set to smoth by js.<br>
 
-All this project just to present the udacity students javascript functionality and amazing ordered code.
+All this project just to present the udacity students javascript functionality and amazing ordered code.<br>
 
-I hope you like it.
+I hope you like it.<br>
 
+# Try It.<br>
+
+# http://HosamSaleh1.github.io/landingpage
+<br>
 © HS 2021
