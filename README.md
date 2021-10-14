@@ -1,5 +1,5 @@
 # Landing Page
-================
+======================
 
 Landing page is an **UDACITY** project.<br>
 It's in the Front End Development Nano degree.
@@ -51,6 +51,8 @@ I hope you like it.<br>
 
 # Try It.<br>
 
-# http://HosamSaleh1.github.io/landingpage
+# https://hosamsaleh1.github.io/landingPage/
+
 <br>
+
 © HS 2021
