@@ -78,6 +78,7 @@ const navList = document.querySelectorAll('#navbar__list a')
 
 const navBarList = document.getElementById('navbar__list')
 navBarList.addEventListener('click',(e)=>{
+    e.preventDefault()
     scrollToElem(e)
 })
 
